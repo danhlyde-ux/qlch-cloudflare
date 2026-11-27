@@ -1,0 +1,23 @@
+{
+  "name": "qlch-cloudflare",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-27",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "qlch",
+      "database_id": "5281731e-28ad-498a-ac78-16a9826a463c"
+    }
+  ],
+  "vars": {
+    "ACCESS_TEAM_DOMAIN": "YOUR-TEAM.cloudflareaccess.com",
+    "ACCESS_AUD": "REPLACE_WITH_ACCESS_APPLICATION_AUD"
+  }
+}
